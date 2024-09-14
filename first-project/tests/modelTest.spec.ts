@@ -23,7 +23,7 @@ describe('LM Studio Model Tests', () => {
       console.log(b)
     });
 
-    xit('should return a valid response for a simple prompt with invalid response', async () => {
+    it('should return a valid response for a simple prompt with invalid response', async () => {
         const response = await queryModel(requestBody);
         const a = JSON.stringify(response.choices[0].message.content)
         console.log(a)
